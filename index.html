@@ -365,7 +365,10 @@
                 <ul>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <ul>
+
                     <li>
                         <button id="theme-toggle" aria-label="Toggle Dark Mode">
                             <svg class="icon sun-icon" viewBox="0 0 24 24" style="display:none;">
@@ -395,41 +398,87 @@
                 <a href="#projects" class="btn-gradient">View Work</a>
             </section>
 
-            <section id="projects">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    
-                    <article class="card">
-                        <h3>Study Buddy (Capstone)</h3>
-                        <p>Mentorship & matching platform; chat, scheduling, responsive UI.</p>
-                        <div class="tag-container">
-                            <span class="tag">Web App</span>
-                            <span class="tag">System Design</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                    </article>
+            <!-- PROJECTS SECTION UPDATE (With Tech Stack Tags) -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        
+        <!-- Card 1: Gym Management -->
+        <article class="card">
+            <h3>Gym Management System</h3>
+            <p>A comprehensive platform for managing member profiles, subscription billing, and equipment maintenance logs.</p>
+            <div class="tag-container">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </article>
 
-                    <article class="card">
-                        <h3>Period Tracking System</h3>
-                        <p>Menstrual cycle tracker, predictions, health logs.</p>
-                        <div class="tag-container">
-                            <span class="tag">Healthcare IT</span>
-                            <span class="tag">Data Logging</span>
-                            <span class="tag">UX</span>
-                        </div>
-                    </article>
+        <!-- Card 2: Barbershop -->
+        <article class="card">
+            <h3>Barbershop Scheduling System</h3>
+            <p>Appointment booking solution allowing clients to choose barbers, view availability slots, and receive reminders.</p>
+            <div class="tag-container">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </article>
 
-                    <article class="card">
-                        <h3>GradeWise (Windows Forms)</h3>
-                        <p>Desktop app for attendance, grading, tasks using OOP.</p>
-                        <div class="tag-container">
-                            <span class="tag">C#</span>
-                            <span class="tag">Desktop</span>
-                            <span class="tag">OOP</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
+        <!-- Card 3: Attendance -->
+        <article class="card">
+            <h3>Attendance Tracking System</h3>
+            <p>Automated timekeeping system for monitoring check-ins, calculating lateness, and generating monthly reports.</p>
+            <div class="tag-container">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="projects-grid">
+        
+        <article class="card">
+            <h3 style="font-size: 1.2rem;">Computer Systems Servicing NC II</h3>
+            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">TESDA</p>
+            <p style="font-size: 0.9rem;">Competency in installing and configuring computer systems, setting up computer networks, and setting up servers.</p>
+            <div class="tag-container">
+                <span class="tag">Hardware</span>
+                <span class="tag">Networking</span>
+                <span class="tag">2023</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <h3 style="font-size: 1.2rem;">Responsive Web Design</h3>
+            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">freeCodeCamp / Coursera</p>
+            <p style="font-size: 0.9rem;">Developer certification focusing on HTML5, CSS3, accessibility, and building responsive visual layouts.</p>
+            <div class="tag-container">
+                <span class="tag">Frontend</span>
+                <span class="tag">Design</span>
+                <span class="tag">2024</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <h3 style="font-size: 1.2rem;">IT Support Specialist</h3>
+            <p style="margin-bottom: 10px; color: var(--text-primary); font-weight: 600;">Google</p>
+            <p style="font-size: 0.9rem;">Fundamentals of technical support, computer networking, operating systems, and system administration.</p>
+            <div class="tag-container">
+                <span class="tag">Support</span>
+                <span class="tag">Admin</span>
+                <span class="tag">2024</span>
+            </div>
+        </article>
+
+    </div>
+</section>
 
             <section id="resume">
                 <div class="card" style="text-align: center; border-top: none; border-left: 6px solid #ffb86b;">
@@ -480,6 +529,27 @@
             <a href="https://www.instagram.com/custodiovvv/" target="_blank">Instagram</a>
         </li>
     </ul>
+</div>
+<form id="contactForm" novalidate>
+        <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Send a Message</h3>
+        
+        <div style="display:flex; flex-direction:column;">
+            <label for="name" style="margin-bottom:5px; font-size:0.9rem; font-weight:600;">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        
+        <div style="display:flex; flex-direction:column;">
+            <label for="email" style="margin-bottom:5px; font-size:0.9rem; font-weight:600;">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email Address">
+        </div>
+        
+        <div style="display:flex; flex-direction:column;">
+            <label for="message" style="margin-bottom:5px; font-size:0.9rem; font-weight:600;">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+        </div>
+        
+        <button type="submit" class="btn-gradient">Send Message</button>
+    </form>
 </div>
             </section>
         </main>
